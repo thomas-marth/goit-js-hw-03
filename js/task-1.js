@@ -5,8 +5,15 @@ const user = {
   premium: true,
 };
 
-// Напиши скрипт, который, для объекта user, последовательно:
+user.mood = 'happy';
+user.hobby = 'skydiving';
+user.premium = false;
 
+for (const key of Object.keys(user)) {
+  console.log(`${key}: ${user[key]}`);
+}
+
+// Напиши скрипт, который, для объекта user, последовательно:
 // добавляет поле mood со значением 'happy'
 // заменяет значение hobby на 'skydiving'
 // заменяет значение premium на false
