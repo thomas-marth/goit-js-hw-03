@@ -6,14 +6,14 @@ const products = [
 ];
 
 const getAllPropValues = function (array, prop) {
-  const PropValues = [];
+  const propValues = [];
 
   for (const arr of array) {
     if (Object.keys(arr).includes(prop)) {
-      PropValues.push(arr[prop]);
+      propValues.push(arr[prop]);
     }
   }
-  return PropValues;
+  return propValues;
 };
 
 /*
